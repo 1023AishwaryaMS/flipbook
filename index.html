@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="flipbook">
+    <title>flipbook</title> <!--added a title -->
+    <link rel="stylesheet" href="style.css"> <!--linked to css file -->
+    <script src="https://kit.fontawesome.com/1cad54f882.js"></script> <!--added icons -->
+
+    <body>
+<!--within the html> body, now creating a div with respective class, label with for and input with id that will help us understand and make styling easier for both programmers and views -->
+                <input type="checkbox" id="checkbox-cover">
+                <input type="checkbox" id="checkbox-page1">
+                <input type="checkbox" id="checkbox-page2">
+                <input type="checkbox" id="checkbox-page3">
+                <div class="book">
+                    <div class="cover">
+                       <!--added a div  whose class= "cover"; It also has a label "checkbox-cover"-->
+                        <label for="checkbox-cover"></label>
+                    </div>
+                    <!--created page 1 with id=page1 liked to the input type=checkbox id=checkbox-page1 -->
+                    <div class="page" id="page1" >
+                        <div class="front-page" style="background-color: white;"> <!-- added inline styling to page 1 with bg clr= white -->
+                                
+                            <p class="para"> Live a Little </p> <!-- added paragragh to page 1-->
+                            <blockquote>So holy and so perfect is my love,
+                                And I in such a poverty of grace,
+                                That I shall think it a most plenteous crop
+                                To glean the broken ears after the man
+                                That the main harvest reaps; loose now and then
+                                A scatt'red smile, and that I'll live upon.
+                                —William Shakespeare</blockquote>  <!-- added paragragh and quote of William Shakespeare to page 1-->
+                            <label class="prev" for="checkbox-page1"></label>
+                        </div> 
+                        <div class="back-page"> <!-- created a back page, opp to front page to have an img or content to page 2(backside of page 1) which can be viewed as we flip the page-->
+                            <img src="./pic2.0.jpg" >     
+                            <label class="next" for="checkbox-page1"><i class="fas fa-chevron-left"></i></label>
+                        </div>
+                    </div>
+<!-- repated all the steps to page 3, 4, 5 , 6-->
+
+                    <div class="page" id="page2" >
+                        <div class="front-page" style="background-color: white;">
+                            <p class="para"> Happiness</p>
+                            <p> Happiness is not something outside <br>
+                                It is an attitude you can provide <br>
+                                Your happiness is not down the road <br>
+                                And, it doesn't mean an easy load. <br><br>
+                                
+                                Happiness is found in you <br>
+                                How you look at life and what you do <br>
+                                You decide each day, you see <br>
+                                How happy you will be?  <br></p> 
+                            <label class="prev" for="checkbox-page2"></label>
+                        </div> 
+                        <div class="back-page">
+                            <img src="./pic12.0.jpg">   
+                            <label class="next" for="checkbox-page2"><i class="fas fa-chevron-left"></i></label>
+                        </div>
+                    </div>
+                    <div class="page" id="page3" >
+                        <div class="front-page" style="background-color: white;">
+                            <p class="para"> HER </p>   
+                            <p > Her smile is like the sky sparkling with diamonds. Happiness is in her soul to energize body's frame. She will forever be the same with her wondrous smile! Her smile uplifts the depressed soul and warms the cold heart. </p>
+                            <label class="prev" for="checkbox-page3"></label>
+                        </div> 
+                        <div class="back-page">
+                            <img src="./cover pic.jpg" >     
+                            <label class="next" for="checkbox-page3"><i class="fas fa-chevron-left"></i></label>
+                        </div>
+                    </div>
+                    <div class="page" id="page4" >
+                        <div class="front-page" style="background-color: white;">
+                                
+                            <p class="para"> LIVE <br> LOVE <br> LAUGH </p>
+                            <label class="prev" for="checkbox-page4"></label>
+                        </div> 
+                    </div>
+                    <div class="back-cover"></div>
+                </div>
+
+      <!-- created the back of the book as back-cover in the above page, closed the body and html -->
+    </body>
+</html>
